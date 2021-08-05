@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		870BCBE726A0C77600B84967 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870BCBE626A0C77600B84967 /* API.swift */; };
+		871689B126BA91380084E510 /* DetailCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871689B026BA91380084E510 /* DetailCollectionView.swift */; };
+		872E7DCB26A089BB0020114F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E7DCA26A089BB0020114F /* DetailViewController.swift */; };
+		872E7DCD26A090950020114F /* DetailViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E7DCC26A090950020114F /* DetailViewControllerViewModel.swift */; };
+		873513D026A855EA00C829A1 /* DetailNotViewed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873513CF26A855EA00C829A1 /* DetailNotViewed.storyboard */; };
+		8743E2EE26A3739700BBFCDD /* KinopoiskParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2E826A3739600BBFCDD /* KinopoiskParser.swift */; };
+		8743E2EF26A3739700BBFCDD /* KinopoiskRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2E926A3739700BBFCDD /* KinopoiskRequest.swift */; };
+		8743E2F026A3739700BBFCDD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2EA26A3739700BBFCDD /* NetworkError.swift */; };
+		8743E2F126A3739700BBFCDD /* RequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2EB26A3739700BBFCDD /* RequestSender.swift */; };
+		8743E2F226A3739700BBFCDD /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2EC26A3739700BBFCDD /* RequestFactory.swift */; };
+		8743E2F326A3739700BBFCDD /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2ED26A3739700BBFCDD /* RequestConfig.swift */; };
+		8743E2F626A37E7600BBFCDD /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2F526A37E7600BBFCDD /* CoreAssembly.swift */; };
+		8743E2F926A37E9900BBFCDD /* StocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2F726A37E9900BBFCDD /* StocksService.swift */; };
+		8743E2FA26A37E9900BBFCDD /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8743E2F826A37E9900BBFCDD /* ServiceAssembly.swift */; };
+		8762368826B2BCEF009D3FB7 /* HorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762368726B2BCEF009D3FB7 /* HorizontalCell.swift */; };
+		8762368A26B2BE08009D3FB7 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8762368926B2BE08009D3FB7 /* UIViewController + Extension.swift */; };
+		8762368E26B2C135009D3FB7 /* HorizontalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8762368D26B2C135009D3FB7 /* HorizontalCell.xib */; };
+		8762369026B2D6A1009D3FB7 /* VerticalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8762368F26B2D6A1009D3FB7 /* VerticalCell.xib */; };
+		876CB0F426A8408500876A01 /* KinopoiskInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876CB0F326A8408500876A01 /* KinopoiskInfoRequest.swift */; };
+		876CB0F626A840AF00876A01 /* KinopoiskInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876CB0F526A840AF00876A01 /* KinopoiskInfoParser.swift */; };
+		8783A75F26A0459200F76C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783A75E26A0459200F76C7D /* AppDelegate.swift */; };
+		8783A76126A0459200F76C7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783A76026A0459200F76C7D /* SceneDelegate.swift */; };
+		8783A76926A0459200F76C7D /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8783A76726A0459200F76C7D /* CoreDataDemo.xcdatamodeld */; };
+		8783A76B26A0459500F76C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8783A76A26A0459500F76C7D /* Assets.xcassets */; };
+		8783A76E26A0459500F76C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8783A76C26A0459500F76C7D /* LaunchScreen.storyboard */; };
+		8783A78426A05C7600F76C7D /* VerticalCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8783A78326A05C7600F76C7D /* VerticalCellViewModel.swift */; };
+		8787F6F026BAE7D500D37EBE /* DetailSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787F6EF26BAE7D500D37EBE /* DetailSectionHeader.swift */; };
+		8787F6F326BAEDA400D37EBE /* DetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8787F6F226BAEDA400D37EBE /* DetailSection.swift */; };
+		8788F0CB26BC670F00F8807D /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788F0CA26BC670F00F8807D /* DetailCollectionViewCell.swift */; };
+		87B5AC9E26A47FA50097D663 /* TrailersParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B5AC9D26A47FA50097D663 /* TrailersParser.swift */; };
+		87B5ACA026A4804D0097D663 /* TrailersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B5AC9F26A4804D0097D663 /* TrailersRequest.swift */; };
+		87DA49D626B9237700D5B7B2 /* CategoryFilms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DA49D526B9237700D5B7B2 /* CategoryFilms.swift */; };
+		87DA49D826B9691F00D5B7B2 /* HorizontalCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DA49D726B9691F00D5B7B2 /* HorizontalCellViewModel.swift */; };
+		87E4FA8A26A6012B00B03A26 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E4FA8926A6012B00B03A26 /* Box.swift */; };
+		87EAAE1926BA806E00362BB0 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAAE1826BA806E00362BB0 /* CollectionView.swift */; };
+		87EAAE2626BA8FEA00362BB0 /* DetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EAAE2526BA8FEA00362BB0 /* DetailCollectionViewController.swift */; };
+		87F0AE7226A9575F00F72A2B /* KinopoiskTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0AE7126A9575F00F72A2B /* KinopoiskTop.swift */; };
+		87F0AE7426A957DE00F72A2B /* Trailers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0AE7326A957DE00F72A2B /* Trailers.swift */; };
+		87F0AE7626A9581F00F72A2B /* KinopoiskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0AE7526A9581F00F72A2B /* KinopoiskInfo.swift */; };
+		87F0AE7A26A9951100F72A2B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0AE7926A9951100F72A2B /* CollectionViewController.swift */; };
+		87F0AE7C26A9B3DE00F72A2B /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0AE7B26A9B3DE00F72A2B /* SectionHeader.swift */; };
+		87F0AE7E26A9FB7C00F72A2B /* CollectionViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0AE7D26A9FB7C00F72A2B /* CollectionViewControllerViewModel.swift */; };
+		87F0AE8026A9FC8C00F72A2B /* VerticalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0AE7F26A9FC8C00F72A2B /* VerticalCell.swift */; };
+		AE6A23813DD668AF12C46FEF /* Pods_CoreDataDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B2379482A1683343416008 /* Pods_CoreDataDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		870BCBE626A0C77600B84967 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		871689B026BA91380084E510 /* DetailCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionView.swift; sourceTree = "<group>"; };
+		872E7DCA26A089BB0020114F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		872E7DCC26A090950020114F /* DetailViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerViewModel.swift; sourceTree = "<group>"; };
+		873513CF26A855EA00C829A1 /* DetailNotViewed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailNotViewed.storyboard; sourceTree = "<group>"; };
+		8743E2E826A3739600BBFCDD /* KinopoiskParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinopoiskParser.swift; sourceTree = "<group>"; };
+		8743E2E926A3739700BBFCDD /* KinopoiskRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KinopoiskRequest.swift; sourceTree = "<group>"; };
+		8743E2EA26A3739700BBFCDD /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8743E2EB26A3739700BBFCDD /* RequestSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSender.swift; sourceTree = "<group>"; };
+		8743E2EC26A3739700BBFCDD /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		8743E2ED26A3739700BBFCDD /* RequestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
+		8743E2F526A37E7600BBFCDD /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		8743E2F726A37E9900BBFCDD /* StocksService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StocksService.swift; sourceTree = "<group>"; };
+		8743E2F826A37E9900BBFCDD /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		8762368726B2BCEF009D3FB7 /* HorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCell.swift; sourceTree = "<group>"; };
+		8762368926B2BE08009D3FB7 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		8762368D26B2C135009D3FB7 /* HorizontalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalCell.xib; sourceTree = "<group>"; };
+		8762368F26B2D6A1009D3FB7 /* VerticalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalCell.xib; sourceTree = "<group>"; };
+		876CB0F326A8408500876A01 /* KinopoiskInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinopoiskInfoRequest.swift; sourceTree = "<group>"; };
+		876CB0F526A840AF00876A01 /* KinopoiskInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinopoiskInfoParser.swift; sourceTree = "<group>"; };
+		8783A75B26A0459200F76C7D /* Filmoteka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filmoteka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8783A75E26A0459200F76C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8783A76026A0459200F76C7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8783A76826A0459200F76C7D /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
+		8783A76A26A0459500F76C7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8783A76D26A0459500F76C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8783A76F26A0459500F76C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8783A78326A05C7600F76C7D /* VerticalCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCellViewModel.swift; sourceTree = "<group>"; };
+		8787F6EF26BAE7D500D37EBE /* DetailSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSectionHeader.swift; sourceTree = "<group>"; };
+		8787F6F226BAEDA400D37EBE /* DetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSection.swift; sourceTree = "<group>"; };
+		8788F0CA26BC670F00F8807D /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		87B5AC9D26A47FA50097D663 /* TrailersParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersParser.swift; sourceTree = "<group>"; };
+		87B5AC9F26A4804D0097D663 /* TrailersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersRequest.swift; sourceTree = "<group>"; };
+		87DA49D526B9237700D5B7B2 /* CategoryFilms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilms.swift; sourceTree = "<group>"; };
+		87DA49D726B9691F00D5B7B2 /* HorizontalCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCellViewModel.swift; sourceTree = "<group>"; };
+		87E4FA8926A6012B00B03A26 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		87EAAE1826BA806E00362BB0 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		87EAAE2526BA8FEA00362BB0 /* DetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewController.swift; sourceTree = "<group>"; };
+		87F0AE7126A9575F00F72A2B /* KinopoiskTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinopoiskTop.swift; sourceTree = "<group>"; };
+		87F0AE7326A957DE00F72A2B /* Trailers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trailers.swift; sourceTree = "<group>"; };
+		87F0AE7526A9581F00F72A2B /* KinopoiskInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinopoiskInfo.swift; sourceTree = "<group>"; };
+		87F0AE7926A9951100F72A2B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		87F0AE7B26A9B3DE00F72A2B /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		87F0AE7D26A9FB7C00F72A2B /* CollectionViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerViewModel.swift; sourceTree = "<group>"; };
+		87F0AE7F26A9FC8C00F72A2B /* VerticalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCell.swift; sourceTree = "<group>"; };
+		9B75D6DB96B771E9BD7CBFE0 /* Pods-CoreDataDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDemo.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A36260F27955DE70A2E67AED /* Pods-CoreDataDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataDemo.release.xcconfig"; path = "Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C2B2379482A1683343416008 /* Pods_CoreDataDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8783A75826A0459100F76C7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6A23813DD668AF12C46FEF /* Pods_CoreDataDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8728CEE6B9E69BC996749F91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B75D6DB96B771E9BD7CBFE0 /* Pods-CoreDataDemo.debug.xcconfig */,
+				A36260F27955DE70A2E67AED /* Pods-CoreDataDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8743E2E426A3717900BBFCDD /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8743E2F526A37E7600BBFCDD /* CoreAssembly.swift */,
+				8743E2E726A3721900BBFCDD /* NetworkManager */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		8743E2E526A3718D00BBFCDD /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8743E2F826A37E9900BBFCDD /* ServiceAssembly.swift */,
+				8743E2F726A37E9900BBFCDD /* StocksService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		8743E2E626A3719800BBFCDD /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8783A77926A0532600F76C7D /* Modules */,
+				87EAAE2026BA8ACA00362BB0 /* Extensions */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8743E2E726A3721900BBFCDD /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				876CB0F226A83F9500876A01 /* KinopoiskInfo */,
+				87B5AC9C26A47F840097D663 /* KinopoiskVideo */,
+				8743E2F426A3750200BBFCDD /* KinopoiskTop */,
+				8743E2EA26A3739700BBFCDD /* NetworkError.swift */,
+				8743E2ED26A3739700BBFCDD /* RequestConfig.swift */,
+				8743E2EC26A3739700BBFCDD /* RequestFactory.swift */,
+				8743E2EB26A3739700BBFCDD /* RequestSender.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		8743E2F426A3750200BBFCDD /* KinopoiskTop */ = {
+			isa = PBXGroup;
+			children = (
+				8743E2E826A3739600BBFCDD /* KinopoiskParser.swift */,
+				8743E2E926A3739700BBFCDD /* KinopoiskRequest.swift */,
+			);
+			path = KinopoiskTop;
+			sourceTree = "<group>";
+		};
+		8762368B26B2C0AF009D3FB7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				87F0AE7F26A9FC8C00F72A2B /* VerticalCell.swift */,
+				8762368F26B2D6A1009D3FB7 /* VerticalCell.xib */,
+				8762368726B2BCEF009D3FB7 /* HorizontalCell.swift */,
+				8762368D26B2C135009D3FB7 /* HorizontalCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8762368C26B2C0B9009D3FB7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				87F0AE7B26A9B3DE00F72A2B /* SectionHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		876CB0F226A83F9500876A01 /* KinopoiskInfo */ = {
+			isa = PBXGroup;
+			children = (
+				876CB0F326A8408500876A01 /* KinopoiskInfoRequest.swift */,
+				876CB0F526A840AF00876A01 /* KinopoiskInfoParser.swift */,
+			);
+			path = KinopoiskInfo;
+			sourceTree = "<group>";
+		};
+		8783A75226A0459100F76C7D = {
+			isa = PBXGroup;
+			children = (
+				870BCBE626A0C77600B84967 /* API.swift */,
+				8783A75D26A0459200F76C7D /* CoreDataDemo */,
+				8783A75C26A0459200F76C7D /* Products */,
+				8728CEE6B9E69BC996749F91 /* Pods */,
+				F0CF0A40BE3C9402DCBBC4F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8783A75C26A0459200F76C7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8783A75B26A0459200F76C7D /* Filmoteka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8783A75D26A0459200F76C7D /* CoreDataDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8743E2E626A3719800BBFCDD /* PresentationLayer */,
+				8743E2E526A3718D00BBFCDD /* ServiceLayer */,
+				8743E2E426A3717900BBFCDD /* CoreLayer */,
+				87F0AE7726A95A2600F72A2B /* SupportingFiles */,
+				8783A76726A0459200F76C7D /* CoreDataDemo.xcdatamodeld */,
+			);
+			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		8783A77926A0532600F76C7D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				87E4FA8926A6012B00B03A26 /* Box.swift */,
+				87EAAE2226BA8BA400362BB0 /* Detail Collection Module */,
+				87EAAE1D26BA8A3800362BB0 /* Detail Module */,
+				87EAAE1C26BA892900362BB0 /* Collection Module */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8783A77A26A0533800F76C7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87F0AE7926A9951100F72A2B /* CollectionViewController.swift */,
+				87EAAE1826BA806E00362BB0 /* CollectionView.swift */,
+				8762368C26B2C0B9009D3FB7 /* Header */,
+				8762368B26B2C0AF009D3FB7 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8783A77B26A0534400F76C7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87F0AE7126A9575F00F72A2B /* KinopoiskTop.swift */,
+				87DA49D526B9237700D5B7B2 /* CategoryFilms.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8783A77C26A0534F00F76C7D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8783A78326A05C7600F76C7D /* VerticalCellViewModel.swift */,
+				87DA49D726B9691F00D5B7B2 /* HorizontalCellViewModel.swift */,
+				87F0AE7D26A9FB7C00F72A2B /* CollectionViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8787F6F126BAED7D00D37EBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8787F6F226BAEDA400D37EBE /* DetailSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87B5AC9C26A47F840097D663 /* KinopoiskVideo */ = {
+			isa = PBXGroup;
+			children = (
+				87B5AC9D26A47FA50097D663 /* TrailersParser.swift */,
+				87B5AC9F26A4804D0097D663 /* TrailersRequest.swift */,
+			);
+			path = KinopoiskVideo;
+			sourceTree = "<group>";
+		};
+		87EAAE1C26BA892900362BB0 /* Collection Module */ = {
+			isa = PBXGroup;
+			children = (
+				8783A77B26A0534400F76C7D /* Model */,
+				8783A77A26A0533800F76C7D /* View */,
+				8783A77C26A0534F00F76C7D /* ViewModel */,
+			);
+			path = "Collection Module";
+			sourceTree = "<group>";
+		};
+		87EAAE1D26BA8A3800362BB0 /* Detail Module */ = {
+			isa = PBXGroup;
+			children = (
+				87EAAE2126BA8B4300362BB0 /* Model */,
+				87EAAE1F26BA8A7000362BB0 /* ViewModel */,
+				87EAAE1E26BA8A6800362BB0 /* View */,
+			);
+			path = "Detail Module";
+			sourceTree = "<group>";
+		};
+		87EAAE1E26BA8A6800362BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				872E7DCA26A089BB0020114F /* DetailViewController.swift */,
+				873513CF26A855EA00C829A1 /* DetailNotViewed.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87EAAE1F26BA8A7000362BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				872E7DCC26A090950020114F /* DetailViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87EAAE2026BA8ACA00362BB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8762368926B2BE08009D3FB7 /* UIViewController + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87EAAE2126BA8B4300362BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87F0AE7326A957DE00F72A2B /* Trailers.swift */,
+				87F0AE7526A9581F00F72A2B /* KinopoiskInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87EAAE2226BA8BA400362BB0 /* Detail Collection Module */ = {
+			isa = PBXGroup;
+			children = (
+				8787F6F126BAED7D00D37EBE /* Model */,
+				87EAAE2426BA8BE100362BB0 /* ViewModel */,
+				87EAAE2326BA8BCC00362BB0 /* View */,
+			);
+			path = "Detail Collection Module";
+			sourceTree = "<group>";
+		};
+		87EAAE2326BA8BCC00362BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87EAAE2526BA8FEA00362BB0 /* DetailCollectionViewController.swift */,
+				871689B026BA91380084E510 /* DetailCollectionView.swift */,
+				8787F6EF26BAE7D500D37EBE /* DetailSectionHeader.swift */,
+				8788F0CA26BC670F00F8807D /* DetailCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87EAAE2426BA8BE100362BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87F0AE7726A95A2600F72A2B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8783A76F26A0459500F76C7D /* Info.plist */,
+				8783A75E26A0459200F76C7D /* AppDelegate.swift */,
+				8783A76026A0459200F76C7D /* SceneDelegate.swift */,
+				8783A76A26A0459500F76C7D /* Assets.xcassets */,
+				8783A76C26A0459500F76C7D /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F0CF0A40BE3C9402DCBBC4F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2B2379482A1683343416008 /* Pods_CoreDataDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8783A75A26A0459100F76C7D /* Filmoteka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8783A77226A0459500F76C7D /* Build configuration list for PBXNativeTarget "Filmoteka" */;
+			buildPhases = (
+				21B74E1D2EF4A840855F9D67 /* [CP] Check Pods Manifest.lock */,
+				8783A75726A0459100F76C7D /* Sources */,
+				8783A75826A0459100F76C7D /* Frameworks */,
+				8783A75926A0459100F76C7D /* Resources */,
+				05A4E145FA11D7973239BC8D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Filmoteka;
+			productName = CoreDataDemo;
+			productReference = 8783A75B26A0459200F76C7D /* Filmoteka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8783A75326A0459100F76C7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8783A75A26A0459100F76C7D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 8783A75626A0459100F76C7D /* Build configuration list for PBXProject "Filmoteka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8783A75226A0459100F76C7D;
+			productRefGroup = 8783A75C26A0459200F76C7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8783A75A26A0459100F76C7D /* Filmoteka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8783A75926A0459100F76C7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8783A76E26A0459500F76C7D /* LaunchScreen.storyboard in Resources */,
+				8762369026B2D6A1009D3FB7 /* VerticalCell.xib in Resources */,
+				873513D026A855EA00C829A1 /* DetailNotViewed.storyboard in Resources */,
+				8762368E26B2C135009D3FB7 /* HorizontalCell.xib in Resources */,
+				8783A76B26A0459500F76C7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05A4E145FA11D7973239BC8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreDataDemo/Pods-CoreDataDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21B74E1D2EF4A840855F9D67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreDataDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8783A75726A0459100F76C7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8743E2F926A37E9900BBFCDD /* StocksService.swift in Sources */,
+				87EAAE2626BA8FEA00362BB0 /* DetailCollectionViewController.swift in Sources */,
+				8743E2FA26A37E9900BBFCDD /* ServiceAssembly.swift in Sources */,
+				87B5ACA026A4804D0097D663 /* TrailersRequest.swift in Sources */,
+				8743E2F226A3739700BBFCDD /* RequestFactory.swift in Sources */,
+				87F0AE7A26A9951100F72A2B /* CollectionViewController.swift in Sources */,
+				876CB0F626A840AF00876A01 /* KinopoiskInfoParser.swift in Sources */,
+				87EAAE1926BA806E00362BB0 /* CollectionView.swift in Sources */,
+				8762368826B2BCEF009D3FB7 /* HorizontalCell.swift in Sources */,
+				872E7DCD26A090950020114F /* DetailViewControllerViewModel.swift in Sources */,
+				8743E2EF26A3739700BBFCDD /* KinopoiskRequest.swift in Sources */,
+				876CB0F426A8408500876A01 /* KinopoiskInfoRequest.swift in Sources */,
+				87DA49D826B9691F00D5B7B2 /* HorizontalCellViewModel.swift in Sources */,
+				87F0AE7C26A9B3DE00F72A2B /* SectionHeader.swift in Sources */,
+				87F0AE7226A9575F00F72A2B /* KinopoiskTop.swift in Sources */,
+				87F0AE8026A9FC8C00F72A2B /* VerticalCell.swift in Sources */,
+				8743E2F626A37E7600BBFCDD /* CoreAssembly.swift in Sources */,
+				87F0AE7426A957DE00F72A2B /* Trailers.swift in Sources */,
+				8743E2EE26A3739700BBFCDD /* KinopoiskParser.swift in Sources */,
+				87F0AE7626A9581F00F72A2B /* KinopoiskInfo.swift in Sources */,
+				8743E2F126A3739700BBFCDD /* RequestSender.swift in Sources */,
+				872E7DCB26A089BB0020114F /* DetailViewController.swift in Sources */,
+				8762368A26B2BE08009D3FB7 /* UIViewController + Extension.swift in Sources */,
+				8788F0CB26BC670F00F8807D /* DetailCollectionViewCell.swift in Sources */,
+				8743E2F026A3739700BBFCDD /* NetworkError.swift in Sources */,
+				8783A76926A0459200F76C7D /* CoreDataDemo.xcdatamodeld in Sources */,
+				8783A75F26A0459200F76C7D /* AppDelegate.swift in Sources */,
+				8783A76126A0459200F76C7D /* SceneDelegate.swift in Sources */,
+				87B5AC9E26A47FA50097D663 /* TrailersParser.swift in Sources */,
+				870BCBE726A0C77600B84967 /* API.swift in Sources */,
+				8787F6F326BAEDA400D37EBE /* DetailSection.swift in Sources */,
+				871689B126BA91380084E510 /* DetailCollectionView.swift in Sources */,
+				87E4FA8A26A6012B00B03A26 /* Box.swift in Sources */,
+				8783A78426A05C7600F76C7D /* VerticalCellViewModel.swift in Sources */,
+				87F0AE7E26A9FB7C00F72A2B /* CollectionViewControllerViewModel.swift in Sources */,
+				8787F6F026BAE7D500D37EBE /* DetailSectionHeader.swift in Sources */,
+				8743E2F326A3739700BBFCDD /* RequestConfig.swift in Sources */,
+				87DA49D626B9237700D5B7B2 /* CategoryFilms.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8783A76C26A0459500F76C7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8783A76D26A0459500F76C7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8783A77026A0459500F76C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8783A77126A0459500F76C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8783A77326A0459500F76C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B75D6DB96B771E9BD7CBFE0 /* Pods-CoreDataDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVVSWG9FDA;
+				INFOPLIST_FILE = CoreDataDemo/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Konstantin.CoreDataDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8783A77426A0459500F76C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36260F27955DE70A2E67AED /* Pods-CoreDataDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PVVSWG9FDA;
+				INFOPLIST_FILE = CoreDataDemo/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Konstantin.CoreDataDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8783A75626A0459100F76C7D /* Build configuration list for PBXProject "Filmoteka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8783A77026A0459500F76C7D /* Debug */,
+				8783A77126A0459500F76C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8783A77226A0459500F76C7D /* Build configuration list for PBXNativeTarget "Filmoteka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8783A77326A0459500F76C7D /* Debug */,
+				8783A77426A0459500F76C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8783A76726A0459200F76C7D /* CoreDataDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8783A76826A0459200F76C7D /* CoreDataDemo.xcdatamodel */,
+			);
+			currentVersion = 8783A76826A0459200F76C7D /* CoreDataDemo.xcdatamodel */;
+			path = CoreDataDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8783A75326A0459100F76C7D /* Project object */;
+}

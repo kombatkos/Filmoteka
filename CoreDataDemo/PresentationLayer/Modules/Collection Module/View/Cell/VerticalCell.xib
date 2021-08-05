@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VerticalCell" id="KDs-Dc-Bh5" customClass="VerticalCell" customModule="Filmoteka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MMU-K4-4ov">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="gDN-wx-CCL">
+                        <rect key="frame" x="8" y="8" width="140" height="203"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="RJr-rR-6dl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Film" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-Hi-X90">
+                        <rect key="frame" x="156" y="22" width="207" height="25.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Film" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="q92-aX-8zV">
+                        <rect key="frame" x="156" y="50.5" width="207" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uOR-Uw-zDO">
+                        <rect key="frame" x="156" y="105" width="219" height="94"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year: 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVS-yG-SZ1">
+                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre: Sport, Music, Horror, Komedy, 18+" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="JvZ-lL-lHD">
+                                <rect key="frame" x="0.0" y="22" width="185.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Country: USA, Russia, Australia, Kanada" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="eng-dn-JYm">
+                                <rect key="frame" x="0.0" y="60.5" width="145.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kinopoisk: 8,5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-tj-WZ1">
+                        <rect key="frame" x="156" y="67.5" width="207" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="systemPinkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="q92-aX-8zV" secondAttribute="trailing" constant="20" symbolic="YES" id="3Kl-mH-qyP"/>
+                    <constraint firstItem="gDN-wx-CCL" firstAttribute="leading" secondItem="MMU-K4-4ov" secondAttribute="leading" constant="8" id="3mX-Cw-lmY"/>
+                    <constraint firstItem="Ocd-Hi-X90" firstAttribute="leading" secondItem="gDN-wx-CCL" secondAttribute="trailing" constant="8" symbolic="YES" id="7LK-az-fgD"/>
+                    <constraint firstItem="q92-aX-8zV" firstAttribute="top" secondItem="Ocd-Hi-X90" secondAttribute="bottom" constant="3" id="B5x-qT-l7t"/>
+                    <constraint firstItem="gDN-wx-CCL" firstAttribute="top" secondItem="MMU-K4-4ov" secondAttribute="top" constant="8" id="GMU-gu-IKE"/>
+                    <constraint firstAttribute="bottom" secondItem="uOR-Uw-zDO" secondAttribute="bottom" constant="20" id="HS3-LJ-a31"/>
+                    <constraint firstItem="Ocd-Hi-X90" firstAttribute="top" secondItem="MMU-K4-4ov" secondAttribute="top" constant="22" id="UeQ-dq-29b"/>
+                    <constraint firstItem="uOR-Uw-zDO" firstAttribute="leading" secondItem="gDN-wx-CCL" secondAttribute="trailing" constant="8" symbolic="YES" id="XHu-9k-SbW"/>
+                    <constraint firstItem="qAs-tj-WZ1" firstAttribute="leading" secondItem="gDN-wx-CCL" secondAttribute="trailing" constant="8" symbolic="YES" id="ZY5-j7-zwI"/>
+                    <constraint firstAttribute="trailing" secondItem="qAs-tj-WZ1" secondAttribute="trailing" constant="20" symbolic="YES" id="chg-2z-Xxk"/>
+                    <constraint firstAttribute="trailing" secondItem="Ocd-Hi-X90" secondAttribute="trailing" constant="20" symbolic="YES" id="d7P-Bb-JOk"/>
+                    <constraint firstItem="q92-aX-8zV" firstAttribute="leading" secondItem="gDN-wx-CCL" secondAttribute="trailing" constant="8" symbolic="YES" id="dqh-ss-Bdx"/>
+                    <constraint firstItem="qAs-tj-WZ1" firstAttribute="top" secondItem="q92-aX-8zV" secondAttribute="bottom" constant="5" id="eQN-hM-w3A"/>
+                    <constraint firstAttribute="trailing" secondItem="uOR-Uw-zDO" secondAttribute="trailing" constant="8" id="l6G-aB-zMO"/>
+                    <constraint firstAttribute="bottom" secondItem="gDN-wx-CCL" secondAttribute="bottom" constant="8" id="tgN-Qo-rIi"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="383" height="219"/>
+            <connections>
+                <outlet property="countryLabel" destination="eng-dn-JYm" id="MYp-2u-yvd"/>
+                <outlet property="enNameLabel" destination="q92-aX-8zV" id="cQK-K1-9my"/>
+                <outlet property="genreLabel" destination="JvZ-lL-lHD" id="PZh-Fq-9RM"/>
+                <outlet property="posterImageView" destination="gDN-wx-CCL" id="fx8-Sc-iBm"/>
+                <outlet property="ratingLabel" destination="qAs-tj-WZ1" id="X4p-Cf-SgO"/>
+                <outlet property="ruNameLabel" destination="Ocd-Hi-X90" id="dEb-ng-8eh"/>
+                <outlet property="yearLabel" destination="XVS-yG-SZ1" id="mUM-XR-VL2"/>
+            </connections>
+            <point key="canvasLocation" x="-39.855072463768117" y="211.94196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="unnamed" width="512" height="512"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
