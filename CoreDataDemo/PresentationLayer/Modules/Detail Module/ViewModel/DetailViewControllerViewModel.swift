@@ -25,7 +25,10 @@ class DetailViewControllerViewModel: DetailViewControllerViewModelType {
             print(filmID)
             switch result {
             case .success(let trailers):
-                let trailer = trailers?.trailers?.first
+                let trailer = trailers?.trailers?.first(where: { trailer in
+                    guard let url = trailer.url else { return false }
+                    return url.contains("youtube")
+                })
                 self?.urlString.value = trailer?.url
             case .failure(let error):
                 print(error.localizedDescription)

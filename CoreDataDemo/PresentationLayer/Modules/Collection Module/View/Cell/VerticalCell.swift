@@ -25,10 +25,12 @@ class VerticalCell: UICollectionViewCell, SelfConfiguringCell {
                 yearLabel?.text = newModel.year
                 genreLabel?.text = newModel.genre
                 countryLabel?.text = newModel.country
+                setupBage(rating: newModel.raiting)
             }
         }
     }
     
+    @IBOutlet weak var bageView: UIView?
     @IBOutlet weak var posterImageView: UIImageView?
     @IBOutlet weak var ruNameLabel: UILabel?
     @IBOutlet weak var enNameLabel: UILabel?
@@ -42,6 +44,8 @@ class VerticalCell: UICollectionViewCell, SelfConfiguringCell {
         
         posterImageView?.layer.cornerRadius = 5
         posterImageView?.clipsToBounds = true
+        bageView?.layer.cornerRadius = 3
+        bageView?.clipsToBounds = true
         
         viewModel?.image.binde {
             guard let data = $0, let image = UIImage(data: data) else { return }
@@ -54,5 +58,16 @@ class VerticalCell: UICollectionViewCell, SelfConfiguringCell {
     func configure<U>(with value: U) {
         guard let viewModel = value as? VerticalCellViewModelType else { return }
         self.viewModel = viewModel
+    }
+    
+    private func setupBage(rating: String) {
+        guard let rating = Double(rating) else { return }
+        if rating > 7 {
+            bageView?.backgroundColor = .systemGreen
+        } else if rating >= 5 {
+            bageView?.backgroundColor = .systemYellow
+        } else {
+            bageView?.backgroundColor = .systemRed
+        }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  DetailCollectionViewCell.swift
+//  TrailerCollectionViewCell.swift
 //  Filmoteka
 //
 //  Created by Konstantin Porokhov on 05.08.2021.

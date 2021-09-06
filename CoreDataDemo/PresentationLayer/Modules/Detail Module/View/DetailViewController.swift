@@ -17,7 +17,8 @@ protocol DetailViewControllerViewModelType {
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var player: YouTubePlayerView?
+    @IBOutlet weak var gradientView: GradientView?
+    @IBOutlet weak var player: YoutubeViewAdapter?
     @IBOutlet weak var nameLabel: UILabel?
     @IBOutlet weak var aboutLabel: UILabel?
     @IBOutlet weak var sloganLabel: UILabel?
@@ -26,8 +27,16 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .never
         fillOutlets()
-        player?.delegate = self
+        player?.youtubeView.delegate = self
+        player?.alpha = 0
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapPlayerAction))
+        player?.addGestureRecognizer(tap)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        gradientView?.setupGradientColors()
     }
     
     private func fillOutlets() {
@@ -50,10 +59,8 @@ class DetailViewController: UIViewController {
         playFullScreen(false)
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if size.width > size.height {
-            playFullScreen(true)
-        }
+    @objc private func tapPlayerAction() {
+        playFullScreen(true)
     }
     
     private func playFullScreen(_ playsinline: Bool) {
@@ -61,13 +68,14 @@ class DetailViewController: UIViewController {
             guard let urlString = $0,
                   let url = URL(string: urlString) else { return }
             DispatchQueue.main.async {
-                self?.player?.playerVars = [
+                self?.player?.youtubeView.playerVars = [
                     "playsinline": playsinline ? "0" : "1",
                     "modestbranding": "1",
                     "controls": "0",
-                    "showinfo": "0"
+                    "showinfo": "0",
+                    "loop": "1"
                 ] as YouTubePlayerView.YouTubePlayerParameters
-                self?.player?.loadVideoURL(url)
+                self?.player?.youtubeView.loadVideoURL(url)
             }
         }
     }
@@ -78,10 +86,7 @@ extension DetailViewController: YouTubePlayerDelegate {
     func playerReady(_ videoPlayer: YouTubePlayerView) {
         videoPlayer.play()
         
-        let compositionFrame = videoPlayer.frame.width * videoPlayer.frame.height
-        let compositionFrameView = self.view.frame.width * self.view.frame.height / 2
-        
-        if compositionFrame > compositionFrameView {
+        if videoPlayer.playerVars["playsinline"] as? String == "0" {
             videoPlayer.unMute()
         } else {
             videoPlayer.mute()
@@ -90,8 +95,9 @@ extension DetailViewController: YouTubePlayerDelegate {
     
     func playerStateChanged(_ videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {
         if playerState == .Playing {
-            UIView.animate(withDuration: 1) {
+            UIView.animate(withDuration: 0.5) {
                 self.sloganLabel?.alpha = 0
+                self.player?.alpha = 1
             }
         }
     }
