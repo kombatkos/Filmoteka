@@ -31,7 +31,7 @@ class VerticalCellViewModel: VerticalCellViewModelType {
     }
     
     var raiting: String {
-        return "Кинопоиск: \(film.rating ?? "")"
+        return film.rating ?? ""
     }
     
     var year: String {

@@ -51,7 +51,7 @@ class HorizontalCell: UICollectionViewCell, SelfConfiguringCell {
         self.viewModel = viewModel
     }
     
-    func setupBage(rating: String) {
+    private func setupBage(rating: String) {
         guard let rating = Double(rating) else { return }
         if rating > 7 {
             bageView?.backgroundColor = .systemGreen
