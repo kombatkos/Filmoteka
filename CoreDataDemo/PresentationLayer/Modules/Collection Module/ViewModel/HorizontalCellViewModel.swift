@@ -49,11 +49,11 @@ class HorizontalCellViewModel: HorizontalCellViewModelType {
         guard let urlString = film.posterUrlPreview,
               let url = URL(string: urlString) else { return }
         
-        if let cacheImage = verticalImageCache.object(forKey: urlString as NSString) {
+        if let cacheImage = horizontalImageCache.object(forKey: urlString as NSString) {
             image.value = cacheImage as Data
         } else {
             guard let data = NSData(contentsOf: url) else { return }
-            verticalImageCache.setObject(data, forKey: urlString as NSString)
+            horizontalImageCache.setObject(data, forKey: urlString as NSString)
             image.value = data as Data?
         }
     }
